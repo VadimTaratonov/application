@@ -20,10 +20,10 @@ import java.util.Objects;
 public class RestTemplateRequestsService {
     private final RestTemplate restTemplate;
 
-    @Value("${path.to.deal.get.offers}")
+    @Value("${custom.integration.deal.url.get.offers}")
     private String PATH_TO_DEAL_GET_OFFERS;
 
-    @Value("${path.to.deal.choose.offer}")
+    @Value("${custom.integration.deal.url.choose.offer}")
     private String PATH_TO_DEAL_CHOOSE_OFFER;
 
     @Autowired
