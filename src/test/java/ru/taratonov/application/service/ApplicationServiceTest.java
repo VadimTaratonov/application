@@ -25,7 +25,7 @@ class ApplicationServiceTest {
     private ApplicationService applicationService;
 
     @Test
-    public void getOffers() {
+    void getOffers() {
         LoanOfferDTO expectedOffer = new LoanOfferDTO();
         List<LoanOfferDTO> expectedOffers = List.of(expectedOffer, expectedOffer);
         LoanApplicationRequestDTO loanApplicationRequest = new LoanApplicationRequestDTO();
@@ -40,7 +40,7 @@ class ApplicationServiceTest {
     }
 
     @Test
-    public void chooseOffer() {
+    void chooseOffer() {
         LoanOfferDTO loanOfferDTO = new LoanOfferDTO();
 
         applicationService.chooseOffer(loanOfferDTO);
